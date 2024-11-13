@@ -20,6 +20,9 @@ jupyter notebook
 
 # Development
 
+### Python version
+Version 3.13.0 is used in virtual environment.
+
 ### GitHub
 Github is used for development work.\
 If you enabled two-factor authentication in your GitHub account you won't be able to push via HTTPS using your accounts password. Instead you need to generate a personal access token. This can be done in the application settings of your GitHub account. Using this token as your password should allow you to push to your remote repository via HTTPS. Use your username as usual.
