@@ -22,7 +22,7 @@ def main():
     import pandas as pd
     entityLoad = EntityLoad(MongoClient("127.0.0.1:27017"))
     startdate = datetime.datetime.strptime("2024-10-01",'%Y-%m-%d')
-    loadedDf = entityLoad.load("entity_claims", { "EntityTimestamp": {'$gte': startdate} })
+    loadedDf = entityLoad.load("entityset_claims", { "EntityTimestamp": {'$gte': startdate} })
     print(loadedDf)
 
 

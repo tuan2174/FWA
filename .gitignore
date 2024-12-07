@@ -17,8 +17,7 @@
 pyvenv.cfg
 
 # Distribution / packaging
-Scripts/
-Include/
+venv/
 .Python
 build/
 develop-eggs/

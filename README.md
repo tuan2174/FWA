@@ -21,7 +21,7 @@ jupyter notebook
 # Development
 
 ### Python version
-Version 3.13.0 is used in virtual environment.
+Version 3.11.0 is used in virtual environment.
 
 ### GitHub
 Github is used for development work.\
@@ -46,20 +46,33 @@ In your dev machine,
 git clone https://github.com/tuan2174/FWA.git
 ```
 
-Install or Upgrade [Python version 3.13]('https://www.python.org/downloads/release/python-3130/')
+Install or Upgrade [Python version 3.11]('https://www.python.org/downloads/release/python-3110/')
 Check "Add python.exe to PATH".
+
+From windows host, open command prompt, navigate to the \FWA
+```sh
+py -m venv --upgrade ./venv
+```
+If permission denied is shown, close the VSCode and run the command again.
 
 ### Python Virtual Environment
 從Visual Studio Code打開Terminal。
 ```sh
-py -m venv src  
+py -m venv --upgrade ./venv
 # Run the following commands every time before python work
-cd src/scripts
+cd scripts
 #Activate the environment s
 activate
 ```
 
+# Run the following commands every time before python work
+cd venv/scripts
+#Activate the environment
+activate
+```
+
 ### Install Modules
+Activate virtual environment.\
 Go to \FWA and run command：
 ```
 $ pip install -r requirements.txt
